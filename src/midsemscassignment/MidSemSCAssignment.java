@@ -1,11 +1,12 @@
 package midsemscassignment;
 
+import java.io.IOException;
 /**
  * @author Akeel Muhammed
  */
 public class MidSemSCAssignment {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         int[][] a;
         int[][] b;
         int[][] answerMatrix;
@@ -21,6 +22,7 @@ public class MidSemSCAssignment {
         }*/
         //System.out.println(b.length);
         answerMatrix = matrixMult(a,b);
+        writeArraytoFile af = new writeArraytoFile(answerMatrix, args[2]);
         
         for(int i=0; i<answerMatrix.length; i++){
             System.out.println();
