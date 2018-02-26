@@ -1,7 +1,6 @@
 package midsemscassignment;
 
 /**
- *
  * @author Akeel Muhammed
  */
 public class MidSemSCAssignment {

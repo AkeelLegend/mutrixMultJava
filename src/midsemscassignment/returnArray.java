@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- *
  * @author Akeel Muhammed
  */
 public class returnArray {
