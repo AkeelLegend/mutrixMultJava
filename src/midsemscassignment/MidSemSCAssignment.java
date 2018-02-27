@@ -35,13 +35,16 @@ public class MidSemSCAssignment {
     
     public static int[][] matrixMult(int m1[][], int m2[][]){
         int[][] result = new int[m1.length][m2[0].length];
-        for(int column =0; column <m2[0].length; column++){
-            for(int i=0; i<m1.length; i++){
-                for(int j=0; j<m2.length; j++){
+        if (m1[0].length == m2.length){
+        
+            for(int column =0; column <m2[0].length; column++){
+                for(int i=0; i<m1.length; i++){
+                    for(int j=0; j<m2.length; j++){
                 result[i][column] += m1[i][j] * m2[j][column];
+                    }
                 }
             }
-        }
+        }else System.out.println("invalid dimension for  matrix multiplication");
         return result;
     }
     

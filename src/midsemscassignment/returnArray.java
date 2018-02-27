@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class returnArray {
     public int[][] returnArrayFromFile(String filepath){
-        String[] line = new String[5];
+        String[] line = new String[10];
         int[][] element = new int[10][10];
         //ArrayList<ArrayList<Integer>> element = new ArrayList<ArrayList<Integer>>();
         int i = 0;
